@@ -1,5 +1,5 @@
 # base image
-FROM node:erbium
+FROM node:14.16.1-alpine3.13
 
 LABEL maintainer="Caio Felipe Cruz"
 # set working directory 
