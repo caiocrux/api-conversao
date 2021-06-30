@@ -13,6 +13,6 @@ RUN npm install
 COPY . /app 
 # start app
 
-EXPOSE 8080
-
 CMD node index.js
+
+EXPOSE 8080
