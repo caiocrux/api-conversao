@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-conversion
+spec:
+  selector:
+    matchLabels:
+      app: api-conversion
+  template:
+    metadata:
+      labels:
+        app: api-conversion
+    spec:
+      containers:
+        - name: movies
+          image: caiocrux/api_conversion:latest
+          ports: 
+            - containerPort: 8080
